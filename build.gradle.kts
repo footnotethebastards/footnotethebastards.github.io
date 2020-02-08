@@ -4,3 +4,16 @@
  * This is a general purpose Gradle build.
  * Learn how to create Gradle builds at https://guides.gradle.org/creating-new-gradle-builds
  */
+plugins {
+    kotlin("jvm") version "1.3.61"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation(kotlin("stdlib"))
+    implementation("com.squareup.retrofit2:retrofit:2.6.1")
+    implementation("com.squareup.retrofit2:converter-simplexml:2.6.1")
+}
